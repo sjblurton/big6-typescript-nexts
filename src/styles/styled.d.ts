@@ -1,29 +1,29 @@
-import 'styled-components'
+import 'styled-components';
 
+type MainColors = {
+  main: string;
+  accent: string;
+};
+
+type Colors = {
+  [key: number]: string;
+};
 declare module 'styled-components' {
-    export interface DefaultTheme {
-        palette: {
-            primary: {
-                main: string;
-                light: string;
-            };
-            secondary: {
-                main: string;
-                light: string;
-            };
-            error: {
-                main: string;
-            };
-            success: {
-                main: string;
-            };
-            common: {
-                white: string;
-                black: string;
-            };
-            gradient: {
-                main: string;
-            };
-        };
-    }
+  export interface DefaultTheme {
+    palette: {
+      primary: MainColors;
+      secondary: MainColors;
+      error: MainColors;
+      success: MainColors;
+      common: {
+        white: MainColors;
+        black: MainColors;
+      };
+      grey: Colors;
+      gradient: MainColors;
+    };
+    boxShadow: {
+      main: string;
+    };
+  }
 }
