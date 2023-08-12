@@ -1,6 +1,7 @@
 import React from 'react';
 import { LinkProps } from 'next/link';
 import { StyledLink } from './link.styles';
+import Body from '../typography/body';
 
 export type SmartLinkProps = LinkProps & {
   children: React.ReactNode;
@@ -13,14 +14,14 @@ function SmartLink({ href, children, ...restProps }: SmartLinkProps) {
   if (isInternalLink) {
     return (
       <StyledLink href={href} {...restProps}>
-        {children}
+        <Body variant="body">{children}</Body>
       </StyledLink>
     );
   }
 
   return (
     <StyledLink href={href} {...restProps} target="_blank" rel="nofollow">
-      {children}
+      <Body variant="body">{children}</Body>
     </StyledLink>
   );
 }
