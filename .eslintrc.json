@@ -8,11 +8,14 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "prettier",
+    "stylelint-config-prettier",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "quotes": ["error", "double"],
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": [1, {"extensions": [".tsx"]}],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -20,6 +23,7 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "prettier/prettier": "error"
   }
 }
