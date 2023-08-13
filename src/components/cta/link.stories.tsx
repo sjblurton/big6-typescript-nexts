@@ -1,3 +1,5 @@
+import { Meta, StoryObj } from '@storybook/react';
+
 import SmartLink from './link';
 
 export default {
@@ -6,16 +8,18 @@ export default {
   args: {
     children: 'Link',
   },
-};
+} satisfies Meta<typeof SmartLink>;
 
-export const ExternalLink = {
+type Story = StoryObj<typeof SmartLink>;
+
+export const ExternalLink: Story = {
   args: {
     href: 'https://www.google.com',
     children: 'Google',
   },
 };
 
-export const InternalLink = {
+export const InternalLink: Story = {
   args: {
     href: '/',
     children: 'Home',

@@ -10,7 +10,7 @@ export default {
     variant: 'primary',
     shape: 'rounded',
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Button>;≈
 
 type Story = StoryObj<typeof Button>;
 

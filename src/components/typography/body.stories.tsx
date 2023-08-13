@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
 import Body from './body';
-import { type } from 'os';
 
 export default {
   title: 'Typography/Paragraphs',
