@@ -1,3 +1,5 @@
+import { Meta, StoryObj } from '@storybook/react';
+
 import Button from './button';
 
 export default {
@@ -8,9 +10,11 @@ export default {
     variant: 'primary',
     shape: 'rounded',
   },
-};
+} satisfies Meta<typeof Button>;
 
-export const Primary = {
+type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
   args: {
     children: 'Primary',
   },
