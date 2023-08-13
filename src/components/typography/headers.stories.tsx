@@ -25,21 +25,3 @@ export const H3 = {
     variant: 'h3',
   },
 };
-
-export const H4 = {
-  args: {
-    variant: 'h4',
-  },
-};
-
-export const H5 = {
-  args: {
-    variant: 'h5',
-  },
-};
-
-export const H6 = {
-  args: {
-    variant: 'h6',
-  },
-};

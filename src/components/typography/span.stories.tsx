@@ -12,7 +12,7 @@ export const Primary = {
   },
 };
 
-export const BlockCapital = {
+export const Button = {
   args: {
     children: 'Block Capital',
     variant: 'button',
